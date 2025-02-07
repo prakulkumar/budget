@@ -28,6 +28,7 @@ export const color = {
   white: "#fff",
   black: "#000",
   border: "#e8eaee",
+  backgroud: "#f4f7fa",
 };
 
 // Breakpoints

@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
-import { border, flex, space } from "../common/style";
+import { border, color, flex, space } from "../common/style";
 import Columns, { Column } from "./helpers/Columns";
 import { Sidebar } from "./Sidebar";
 import Toolbar from "./Toolbar";
@@ -26,7 +26,16 @@ const Layout = () => {
         >
           <Sidebar open={openSideNav} setOpen={setOpenSideNav} />
         </Box>
-        <Box sx={{ flex: 1, borderRight: border, p: space.md }}>Main</Box>
+        <Box
+          sx={{
+            flex: 1,
+            borderRight: border,
+            p: space.md,
+            background: color.backgroud,
+          }}
+        >
+          Main
+        </Box>
       </Box>
     </Box>
   );
