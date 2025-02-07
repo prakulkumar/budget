@@ -1,8 +1,13 @@
-import { Box } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
-  return <Box>Hello World</Box>;
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />} />
+    </Routes>
+  );
 }
 
 export default App;
