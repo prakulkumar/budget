@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
-import { border, color, flex, space } from "../common/style";
-import Columns, { Column } from "./helpers/Columns";
-import Main from "./Main";
+import { Outlet } from "react-router-dom";
+import { border, color, flex, space } from "../../common/style";
+import Columns, { Column } from "./../helpers/Columns";
+import Toolbar from "./../toolbar/Toolbar";
 import { Sidebar } from "./Sidebar";
-import Toolbar from "./toolbar/Toolbar";
 
 const Layout = () => {
   const [openSideNav, setOpenSideNav] = useState(true);
@@ -20,9 +20,10 @@ const Layout = () => {
       <Box sx={{ height: "calc(100vh - 3.75rem)", ...flex.row }}>
         <Box
           sx={{
-            width: openSideNav ? "12rem" : "2.5rem",
+            width: openSideNav ? "12rem" : "4rem",
             borderRight: border,
-            p: space.md,
+            pt: space.md,
+            pb: space.md,
           }}
         >
           <Sidebar open={openSideNav} setOpen={setOpenSideNav} />
@@ -35,7 +36,7 @@ const Layout = () => {
             background: color.backgroud,
           }}
         >
-          <Main />
+          <Outlet />
         </Box>
       </Box>
     </Box>
