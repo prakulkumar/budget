@@ -23,3 +23,8 @@ export interface SidebarList {
   href: string;
   icon: ReactElement<typeof Icon>;
 }
+
+export interface Options {
+  value: string;
+  label: string;
+}

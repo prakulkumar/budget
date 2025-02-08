@@ -47,6 +47,16 @@ export const shadow = {
   lg: "0 1rem 3rem rgba(0, 0, 0, 0.175)",
 };
 
+// Font weight
+export const fontWeight = {
+  extraLight: 300,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semiBold: 600,
+  bold: 700,
+};
+
 // Border radius
 export const borderRadius = "0.25rem";
 

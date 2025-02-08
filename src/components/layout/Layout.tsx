@@ -32,8 +32,7 @@ const Layout = () => {
           sx={{
             flex: 1,
             borderRight: border,
-            p: space.md,
-            background: color.backgroud,
+            p: `${space.md} ${space.xl}`,
           }}
         >
           <Outlet />
