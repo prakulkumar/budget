@@ -4,7 +4,7 @@ import { border, color, flex, space } from "../common/style";
 import Columns, { Column } from "./helpers/Columns";
 import Main from "./Main";
 import { Sidebar } from "./Sidebar";
-import Toolbar from "./Toolbar";
+import Toolbar from "./toolbar/Toolbar";
 
 const Layout = () => {
   const [openSideNav, setOpenSideNav] = useState(true);

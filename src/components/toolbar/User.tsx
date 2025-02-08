@@ -2,7 +2,7 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar, Box, Button } from "@mui/material";
 import { useState } from "react";
-import { color, flex, space } from "../common/style";
+import { color, flex, space } from "../../common/style";
 import UserMenu from "./UserMenu";
 
 const User = () => {

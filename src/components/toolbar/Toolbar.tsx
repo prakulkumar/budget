@@ -1,5 +1,5 @@
 import { Box, SxProps } from "@mui/material";
-import { border, flex } from "../common/style";
+import { border, flex } from "../../common/style";
 import User from "./User";
 
 const style: SxProps = {
