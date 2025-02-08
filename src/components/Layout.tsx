@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { useState } from "react";
 import { border, color, flex, space } from "../common/style";
 import Columns, { Column } from "./helpers/Columns";
+import Main from "./Main";
 import { Sidebar } from "./Sidebar";
 import Toolbar from "./Toolbar";
 
@@ -34,7 +35,7 @@ const Layout = () => {
             background: color.backgroud,
           }}
         >
-          Main
+          <Main />
         </Box>
       </Box>
     </Box>

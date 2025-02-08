@@ -64,6 +64,7 @@ export const flex = {
   row: { display: "flex", flexDirection: "row" },
   column: { display: "flex", flexDirection: "column" },
   center: { alignItems: "center", justifyContent: "center" },
+  alignCenter: { alignItems: "center" },
   justifyCenter: { justifyContent: "center" },
   justifyBetween: { justifyContent: "space-between" },
   justifyEnd: { justifyContent: "flex-end" },

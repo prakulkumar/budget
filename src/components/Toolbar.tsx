@@ -1,15 +1,23 @@
 import { Box, SxProps } from "@mui/material";
+import { border, flex } from "../common/style";
+import User from "./User";
 
 const style: SxProps = {
-  display: "flex",
+  ...flex.row,
+  ...flex.justifyBetween,
   alignItems: "center",
   height: "100%",
   padding: "0 1rem",
-  borderBottom: "1px solid #e8eaee",
+  borderBottom: border,
 };
 
 const Toolbar = () => {
-  return <Box sx={style}>Budget</Box>;
+  return (
+    <Box sx={style}>
+      <Box>Toolbar</Box>
+      <User />
+    </Box>
+  );
 };
 
 export default Toolbar;
