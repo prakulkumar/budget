@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { border, color, flex, space } from "../../common/style";
+import { border, flex, space } from "../../common/style";
 import Columns, { Column } from "./../helpers/Columns";
 import Toolbar from "./../toolbar/Toolbar";
 import { Sidebar } from "./Sidebar";
